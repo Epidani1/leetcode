@@ -1,12 +1,12 @@
 /*****************************************
 *Source: Leetcode Algorithm Challenger #1*
-*Title: Two Sum 						 *
-*Language: Java							 *
+*Title: Two Sum 			 *
+*Language: Java				 *
 *Program Description: Given an array of  *
 *integers, return indices of the two 	 *
-*numbers that add up to a specific 		 *
-*target.								 *
-*Run time: 24ms							 *
+*numbers that add up to a specific 	 *
+*target.				 *
+*Run time: 24ms				 *
 ******************************************/
 
 class Solution {
