@@ -1,5 +1,5 @@
 /*****************************************
-*Source: Leetcode Algorithm Challenger #1*
+*Source: Leetcode Algorithm Challenge #1 *
 *Title: Two Sum 			 *
 *Language: Java				 *
 *Program Description: Given an array of  *
