@@ -2,12 +2,8 @@
 Question 415: Add Strings : Easy 
 URL: https://leetcode.com/problems/add-strings/
 Remark: Python has built-in function called ord('0') or chr(48) that converts from and to ASCII values 
+        numbers start at '0' as 48 and '9' as 57 
 '''
-
-# What i want to do:
-# (1) convert string to its appropriate integer value and store
-# (2) add those integer values for both values
-# (3) and convert back to string for the result
 
 class Solution:
     def addStrings(self, num1, num2):
@@ -27,13 +23,3 @@ class Solution:
         return ''.join(ans)
         
                 
-
-sn = Solution()
-print(sn.addStrings("123", "456"))
-
-
-# a = ['h', 'e', 'l', 'l', 'o']
-# b = ['g', 'g', 'g', 'g', 'g']
-
-# c = a + b
-# print(''.join(c))
