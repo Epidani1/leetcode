@@ -1,20 +1,35 @@
-''' 
-Question 107: Binary Tree Level Order Traversal II: Easy 
-URL: https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
-Remark: Use BFS to travel level-by-level
-'''
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
 class Solution:
     def levelOrderBottom(self, root):
         if not root:
-            return 
-        ans, queue = [], []
+            return
+        queue, ans = [], []
         queue.append(root)
-        while queue:
-            size, currLevel = len(queue), []
+        while (queue):
+            level = []
+            size = len(queue)
             for i in range(size):
                 curr = queue.pop(0)
-                currLevel.append(curr.val)
+                level.append(curr.val)
                 if (curr.left): queue.append(curr.left)
                 if (curr.right): queue.append(curr.right)
-            ans.insert(0, currLevel)
+            ans.append(level)
         return ans
+        
+sn = Solution()
+
+first = TreeNode(1)
+second = TreeNode(2)
+third = TreeNode(3)
+fourth = TreeNode(4)
+fifth = TreeNode(5)
+first.left = second
+first.right = third
+second.left = fourth
+fourth.left = fifth
+
+print(sn.levelOrderBottom(first))
