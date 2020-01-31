@@ -17,9 +17,3 @@ class Solution:
             elif nums[curr] < target:
                 low = curr+1
         return -1
-
-
-
-sn = Solution()
-# print(sn.search([-1,0,3,5,9,12], 9))
-print(sn.search([2,5], 5))
