@@ -3,6 +3,7 @@ class TreeNode:
         self.val = x
         self.left = None
         self.right = None
+        
 class Solution:
     def levelOrderBottom(self, root):
         if not root:
@@ -19,17 +20,3 @@ class Solution:
                 if (curr.right): queue.append(curr.right)
             ans.append(level)
         return ans
-        
-sn = Solution()
-
-first = TreeNode(1)
-second = TreeNode(2)
-third = TreeNode(3)
-fourth = TreeNode(4)
-fifth = TreeNode(5)
-first.left = second
-first.right = third
-second.left = fourth
-fourth.left = fifth
-
-print(sn.levelOrderBottom(first))
